@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation bars and carousel</title>
+  <link rel="icon" href="images/logo1.jpg">
+  <link rel="stylesheet" href="bootstrap/bootstrap-4.6.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap-4.6.1-dist/css/navCSS.css">
+
+
+  <script src="bootstrap/bootstrap-4.6.1-dist/js/jquery-3.6.0.js"></script>
+  <script src="bootstrap/bootstrap-4.6.1-dist/js/popper.min.js"></script>
+  <script src="bootstrap/bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark" style="background: darkblue;color: white;">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img src="images/logo1.jpg" alt="" width="50" height="50">
+
+  </a>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Our partners</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          product and services
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">computers and computer accessories</a>
+          <a class="dropdown-item" href="#">computer maintenance</a>
+          <a class="dropdown-item" href="#">computer networking</a>
+          <a class="dropdown-item" href="#">cctv installation</a>
+          <a class="dropdown-item" href="#">software development</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">MEMBERSHIP
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Join Isibalo-YAS</a>
+          <a class="dropdown-item" href="#">Ordinary Membership</a>
+          <a class="dropdown-item" href="#">Associate Membership</a>
+          <a class="dropdown-item" href="#">Student Membership</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">ABOUT US
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Committee Members</a>
+          <a class="dropdown-item" href="#">Organization Structure</a>
+          <a class="dropdown-item" href="#">ARegional Coordinators</a>
+          <a class="dropdown-item" href="#">Trustees</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Careers</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TRAINING
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">ISIBALO-YAS Certificate</a>
+          <a class="dropdown-item" href="#">Scilap</a>
+          <a class="dropdown-item" href="#">ProText</a>
+          <a class="dropdown-item" href="#">SPSS</a>
+          <a class="dropdown-item" href="#">PYTHON</a>
+          <a class="dropdown-item" href="#">SQL</a>
+        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact us</a>
+      </li>
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+  </div>
+  </ul>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="2" class="active"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Slides/slide%202.jpg" alt="slide 2">
+      <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta dolorum eaque, eos inventore maiores maxime sunt veniam voluptates. Debitis eligendi esse eum illo incidunt neque nesciunt placeat quasi voluptatum!</span><span>Commodi dicta dolorem dolores et fuga libero magni mollitia nobis, obcaecati odio odit quibusdam repellat sapiente tempore velit? Aut deserunt dignissimos doloribus enim exercitationem minima nemo perspiciatis, porro possimus quod?</span>
+      </p>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Slides/slide%203.jpg" alt="slide 3">
+      <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta dolorum eaque, eos inventore maiores maxime sunt veniam voluptates. Debitis eligendi esse eum illo incidunt neque nesciunt placeat quasi voluptatum!</span><span>Commodi dicta dolorem dolores et fuga libero magni mollitia nobis, obcaecati odio odit quibusdam repellat sapiente tempore velit? Aut deserunt dignissimos doloribus enim exercitationem minima nemo perspiciatis, porro possimus quod?</span>
+      </p>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Slides/slide%204.jpg" alt="slide 4">
+      <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta dolorum eaque, eos inventore maiores maxime sunt veniam voluptates. Debitis eligendi esse eum illo incidunt neque nesciunt placeat quasi voluptatum!</span><span>Commodi dicta dolorem dolores et fuga libero magni mollitia nobis, obcaecati odio odit quibusdam repellat sapiente tempore velit? Aut deserunt dignissimos doloribus enim exercitationem minima nemo perspiciatis, porro possimus quod?</span>
+      </p>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Slides/slide%205.jpg" alt="slide 5">
+      <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta dolorum eaque, eos inventore maiores maxime sunt veniam voluptates. Debitis eligendi esse eum illo incidunt neque nesciunt placeat quasi voluptatum!</span><span>Commodi dicta dolorem dolores et fuga libero magni mollitia nobis, obcaecati odio odit quibusdam repellat sapiente tempore velit? Aut deserunt dignissimos doloribus enim exercitationem minima nemo perspiciatis, porro possimus quod?</span>
+      </p>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Slides/slide%206.jpg" alt="slide 6">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background: darkblue">
+  <div class="inner-footer">
+    <div class="row">
+      <div class="col-md-3">
+        <h5 class="footerHeading">About us</h5>
+        <hr class="footerHr">
+        <p class="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magnam quia recusandae sint
+          temporibus voluptate voluptatum? Culpa, cumque deserunt dicta dolorem doloremque ea esse explicabo
+          fugit, ipsa sed totam, vitae.</p>
+        <div class="buttons">
+          <a class="btn btn-success" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h5 class="footerHeading">Our products</h5>
+        <hr class="footerHr">
+        <p class="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magnam quia recusandae sint
+          temporibus voluptate voluptatum? Culpa, cumque deserunt dicta dolorem doloremque ea esse explicabo
+          fugit, ipsa sed totam, vitae.</p>
+        <div class="buttons">
+          <a class="btn btn-warning" href="#">Read more</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h5 class="footerHeading">Location</h5>
+        <hr class="footerHr">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819633227679!2d36.8192051147172!3d-1.2819906359829918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f118a7755ea71%3A0x697a8fe13df19391!2sMoi%20University-Bazaar%20Plaza!5e0!3m2!1sen!2ske!4v1645690388385!5m2!1sen!2ske" width="100%" height="200" style="border:2px solid darkblue;border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+      </div>
+      <div class="col-md-3">
+        <h5 class="footerHeading">Contact us</h5>
+        <hr class="footerHr">
+        <p class="footerParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magnam quia recusandae sint
+          temporibus voluptate voluptatum? Culpa, cumque deserunt dicta dolorem doloremque ea esse explicabo
+          fugit, ipsa sed totam, vitae.</p>
+        <div class="buttons">
+          <a class="btn btn-secondary" href="#">Read more</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  ...
+</nav>
+
+
+</body>
+</html>
